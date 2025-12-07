@@ -28,6 +28,7 @@ export function ListUsers() {
 
     return<>
         <button onClick={createBasicData}>Teszt adatok felvétele</button>
+        <NavLink to={"/users/new"}>New user</NavLink>
         <ul>
             {users.map((user) => (
                 <li key={user.id}>
